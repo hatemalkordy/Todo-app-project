@@ -31,13 +31,13 @@ const input = document.querySelector(".input-task");
 const todoList = document.querySelector(".todo-list");
 
 const form = document.querySelector(".todo-form");
-const todoArray = JSON.parse(localStorage.getItem("todoList")) || [];
+let todoArray = JSON.parse(localStorage.getItem("todoList")) || [];
 
 function updatePage() {
     todoList.innerHTML = "";
     todoArray.forEach((task, index) => {
 
-        let completedClass = task.completed ? "completed" : "";
+        const completedClass = task.completed ? "completed" : "";
 
         todoList.innerHTML += `
         <li class="${completedClass}">
