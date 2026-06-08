@@ -81,8 +81,6 @@ function toggleTask(index) {
 
 //  socend stage
 
-let listElements = todoList.querySelectorAll("li");
-
 function updateItemsCount() {
     let tempActive = []; 
     
@@ -108,6 +106,8 @@ all.addEventListener('click', function() {
     activeItems.classList.remove("active");
     all.classList.add("active");
 
+    let listElements = todoList.querySelectorAll("li");
+
     listElements.forEach(li => {
         li.style.display = "flex"; 
     });
@@ -123,6 +123,7 @@ activeItems.addEventListener('click', function() {
     completedItems.classList.remove("active");
     activeItems.classList.add("active");
 
+    let listElements = todoList.querySelectorAll("li");
     
     todoArray.forEach((task, i) => {
         if (task.completed === true) {
@@ -142,8 +143,8 @@ completedItems.addEventListener('click', function() {
     activeItems.classList.remove("active");
     completedItems.classList.add("active");
     
-
-    // let listElements = todoList.querySelectorAll("li");
+    let listElements = todoList.querySelectorAll("li");
+    
     todoArray.forEach((task, i) => {
         if (task.completed === true) {
             listElements[i].style.display = "flex"; 
