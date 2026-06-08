@@ -34,6 +34,7 @@
     <form class="todo-form">
       <span class="circle-placeholder"></span>
       <input class="input-task" type="text" placeholder="Create a new todo...">
+      <button type="submit" style="display: none;">Submit</button>
     </form>
 
     <div class="todo-container">
@@ -52,11 +53,11 @@
       <div class="todo-footer">
         <span id="left-items"></span>
         <div class="filters">
-        <button id="all" class="active">All</button>
-        <button id="active-items">Active</button>
-        <button id="completed-items">Completed</button>
+        <button id="all" class="active" type="button">All</button>
+        <button id="active-items" type="button">Active</button>
+        <button id="completed-items" type="button">Completed</button>
         </div>
-      <button id="clear-btn">Clear Completed</button>
+      <button id="clear-btn" type="button">Clear Completed</button>
       </div>
     </div>
     <p class="final-text">Drag and drop to reorder list</p>
