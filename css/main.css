@@ -86,7 +86,8 @@ body {
 }
 
 .content {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     padding: 10px;
     margin-top: 40px;
 }
@@ -208,8 +209,8 @@ body {
     border: none;
 }
 
-.todo-list li.completed .check-icon {
-    display: block !important;
+.content .todo-list li.completed .todo-left-side .circle-placeholder .check-icon {
+      display: block;
 }
 
 .todo-list li.completed .todo-text {
@@ -270,7 +271,6 @@ body {
 
 .content .todo-footer .filters button {
     background: none;
-    border: none;
     color: var(--text-muted); 
     font-family: inherit;
     font-weight: 700;
