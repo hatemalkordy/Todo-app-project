@@ -81,7 +81,7 @@ function toggleTask(index) {
 //  socend stage
 
 function updateItemsCount() {
-    let tempActive = []; 
+    const tempActive = []; 
     
     for (let i = 0; i < todoArray.length; i++) {
         if (todoArray[i].completed === false) {
