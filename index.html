@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- fonts files -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <!-- fonts files -->
+  <!-- css files -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  <!-- css files -->
+  
+  <title>Todo app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="header">
+      <h1 class="logo">TODO</h1>
+      <span class="light-icon active"><img src="images/icon-sun.svg"></span>
+      <span class="dark-icon"><img src="images/icon-moon.svg"></span>
+    </div>
+    <form class="todo-form">
+      <span class="circle-placeholder"></span>
+      <input class="input-task" type="text" placeholder="Create a new todo...">
+    </form>
+
+    <div class="todo-container">
+      <ul class="todo-list">
+        <!-- <li>
+          <div class="todo-left-side">
+            <div class="circle-placeholder">
+              <img src="images/icon-check.svg" alt="Check" class="check-icon">
+            </div>
+            <span class="todo-text">jog around the park</span>
+          </div>
+          <img class="delete" src="images/icon-cross.svg" alt="Delete">
+        </li> -->
+      </ul>
+      
+      <div class="todo-footer">
+        <span id="left-items"></span>
+        <div class="filters">
+        <button id="all" class="active">All</button>
+        <button id="active-items">Active</button>
+        <button id="completed-items">Completed</button>
+        </div>
+      <button id="clear-btn">Clear Completed</button>
+      </div>
+    </div>
+    <p class="final-text">Drag and drop to reorder list</p>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
