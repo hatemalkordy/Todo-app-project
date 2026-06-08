@@ -12,8 +12,8 @@
     --text-completed: hsl(233, 14%, 35%); 
     --text-muted: hsl(235, 16%, 43%);     
     --border-color: hsl(237, 14%, 26%); 
-    --bg-image: url(/images/bg-desktop-dark.jpg);
-    --bg-image-mobile: url(/images/bg-mobile-dark.jpg);
+    --bg-image: url(images/bg-desktop-dark.jpg);
+    --bg-image-mobile: url(images/bg-mobile-dark.jpg);
 
     --text-hover: hsl(236, 33%, 92%);  /*in hover */
 }
@@ -25,8 +25,8 @@
     --text-completed: hsl(233, 11%, 84%);
     --text-muted: hsl(236, 9%, 61%);     
     --border-color: hsl(233, 11%, 84%); 
-    --bg-image: url(/images/bg-desktop-light.jpg);
-    --bg-image-mobile: url(/images/bg-mobile-light.jpg);
+    --bg-image: url(images/bg-desktop-light.jpg);
+    --bg-image-mobile: url(images/bg-mobile-light.jpg);
 }
 
 body {
