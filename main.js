@@ -1,4 +1,3 @@
-let theme = document.querySelector(".light-icon");
 let light = document.querySelector(".light-icon");
 let dark = document.querySelector(".dark-icon");
 
@@ -28,8 +27,8 @@ dark.addEventListener('click', function() {
 
 // start with inputs 
 
-let input = document.querySelector(".input-task");
-let todoList = document.querySelector(".todo-list");
+const input = document.querySelector(".input-task");
+const todoList = document.querySelector(".todo-list");
 
 let form = document.querySelector(".todo-form");
 let todoArray = JSON.parse(localStorage.getItem("todoList")) || [];
