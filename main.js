@@ -1,5 +1,5 @@
-let light = document.querySelector(".light-icon");
-let dark = document.querySelector(".dark-icon");
+const light = document.querySelector(".light-icon");
+const dark = document.querySelector(".dark-icon");
 
 const savedTheme = localStorage.getItem('data-theme');
 if (savedTheme === 'Light') {
@@ -30,8 +30,8 @@ dark.addEventListener('click', function() {
 const input = document.querySelector(".input-task");
 const todoList = document.querySelector(".todo-list");
 
-let form = document.querySelector(".todo-form");
-let todoArray = JSON.parse(localStorage.getItem("todoList")) || [];
+const form = document.querySelector(".todo-form");
+const todoArray = JSON.parse(localStorage.getItem("todoList")) || [];
 
 function updatePage() {
     todoList.innerHTML = "";
@@ -89,7 +89,7 @@ function updateItemsCount() {
         }
     }
 
-    let lefts = document.querySelector("#left-items");
+    const lefts = document.querySelector("#left-items");
     if (lefts) {
         lefts.innerText = `${tempActive.length} items left`;
     }
@@ -97,7 +97,7 @@ function updateItemsCount() {
 
 
 // all btn
-let all = document.querySelector("#all"); 
+const all = document.querySelector("#all"); 
 
 all.addEventListener('click', function() {
     
@@ -105,7 +105,7 @@ all.addEventListener('click', function() {
     activeItems.classList.remove("active");
     all.classList.add("active");
 
-    let listElements = todoList.querySelectorAll("li");
+    const listElements = todoList.querySelectorAll("li");
 
     listElements.forEach(li => {
         li.style.display = "flex"; 
@@ -114,7 +114,7 @@ all.addEventListener('click', function() {
 
 
 // active btn
-let activeItems = document.querySelector("#active-items"); 
+const activeItems = document.querySelector("#active-items"); 
 
 activeItems.addEventListener('click', function() {
     
@@ -122,7 +122,7 @@ activeItems.addEventListener('click', function() {
     completedItems.classList.remove("active");
     activeItems.classList.add("active");
 
-    let listElements = todoList.querySelectorAll("li");
+    const listElements = todoList.querySelectorAll("li");
     
     todoArray.forEach((task, i) => {
         if (task.completed === true) {
@@ -134,7 +134,7 @@ activeItems.addEventListener('click', function() {
 });
 
 // completed btn
-let completedItems = document.querySelector("#completed-items"); 
+const completedItems = document.querySelector("#completed-items"); 
 
 completedItems.addEventListener('click', function() {
     
@@ -142,7 +142,7 @@ completedItems.addEventListener('click', function() {
     activeItems.classList.remove("active");
     completedItems.classList.add("active");
     
-    let listElements = todoList.querySelectorAll("li");
+    const listElements = todoList.querySelectorAll("li");
     
     todoArray.forEach((task, i) => {
         if (task.completed === true) {
@@ -155,7 +155,7 @@ completedItems.addEventListener('click', function() {
 
 //  clear btn
 //  clear btn
-let clearBtn = document.querySelector("#clear-btn"); 
+const clearBtn = document.querySelector("#clear-btn"); 
 
 clearBtn.addEventListener('click', function() {
     
@@ -184,3 +184,7 @@ clearBtn.addEventListener('click', function() {
 //     todoArray = tempArray;
 //     updatePage();
 // });
+
+
+window.deleteTask = deleteTask;
+window.toggleTask = toggleTask;
